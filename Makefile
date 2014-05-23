@@ -45,7 +45,7 @@ docker: aufs
 	sleep 2 # give docker a moment i guess
 
 aufs:
-	lsmod | grep aufs || modprobe aufs || apt-get install -y linux-image-extra-`uname -r`
+	#lsmod | grep aufs || modprobe aufs || apt-get install -y linux-image-extra-`uname -r`
 
 stack:
 ifdef BUILD_STACK
