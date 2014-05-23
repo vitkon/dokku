@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -eo pipefail
 export DEBIAN_FRONTEND=noninteractive
-export DOKKU_REPO=${DOKKU_REPO:-"https://github.com/progrium/dokku.git"}
+export DOKKU_REPO=${DOKKU_REPO:-"https://github.com/vitkon/dokku.git"}
 
 if ! which apt-get &>/dev/null
 then
-  echo "This installation script requires apt-get. For manual installation instructions, consult https://github.com/progrium/dokku ."
+  echo "This installation script requires apt-get. For manual installation instructions, consult https://github.com/vitkon/dokku ."
   exit 1
 fi
 
@@ -28,4 +28,4 @@ make install
 
 echo
 echo "Almost done! For next steps on configuration:"
-echo "  https://github.com/progrium/dokku#configuring"
+echo "  https://github.com/vitkon/dokku#configuring"
